@@ -7,9 +7,8 @@ jobs:
   cow:
     name: Cowsays
     runs-on: ubuntu-latest
+    container: docker/whalesay
     steps:
-    - name: Ship it
-      uses: mscoutermarsh/cowsays-action@master
-      with:
-        text: 'Junior Lima'
-        color: 'red'
+    - name: run
+      run: docker/whalesay cowsay Junior Lima
+
