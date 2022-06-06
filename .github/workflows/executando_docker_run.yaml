@@ -10,5 +10,5 @@ jobs:
     container: docker/whalesay
     steps:
     - name: run
-      run: docker/whalesay cowsay Junior Lima
+      run: cowsay Junior Lima
 
